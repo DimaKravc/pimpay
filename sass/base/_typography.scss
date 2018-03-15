@@ -1,0 +1,52 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: rem(20px);
+    font-weight: $font-weight-bold;
+    letter-spacing: -0.2px;
+}
+
+h1 {
+    @include font-size(40px);
+}
+
+h2 {
+    @include font-size(36px);
+}
+
+h3 {
+    @include font-size(32px);
+}
+
+h4 {
+    @include font-size(28px);
+}
+
+h5 {
+    @include font-size(24px);
+}
+
+h6 {
+    @include font-size(20px);
+}
+
+b,
+strong {
+    font-weight: $font-weight-bold;
+}
+
+small {
+    @include font-size(12px);
+}
+
+em {
+    font-style: italic;
+}
+
+p {
+    margin-bottom: rem(20px);
+}

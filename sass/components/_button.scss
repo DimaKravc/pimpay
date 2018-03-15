@@ -1,0 +1,38 @@
+.button {
+    min-width: rem(175px);
+    display: inline-block;
+    height: rem(64px);
+    @include font-size(24px);
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #000000;
+    background: $color-accent;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 0 10px 24px -16px #e59e00;
+    border: none;
+    outline: none;
+    padding: rem(17px) rem(35px);
+    text-decoration: none;
+    cursor: pointer;
+    transition: box-shadow $transition-time;
+
+    &_size_small {
+        height: rem(48px);
+        @include font-size(20px);
+        letter-spacing: 0.6px;
+        padding: rem(12px) rem(25px);
+    }
+
+    &_size_big {
+        @include font-size(33px);
+        height: rem(80px);
+        padding: rem(21px) rem(55px);
+        letter-spacing: 1px;
+    }
+
+    &:hover {
+         box-shadow: 0 14px 24px -19px #404040;
+    }
+}

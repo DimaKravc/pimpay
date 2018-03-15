@@ -1,0 +1,139 @@
+.site-footer {
+    padding: rem(74px) 0 rem(56px);
+    .site-brand {
+        float: left;
+        margin-right: rem(60px);
+
+        &__logo {
+            width: rem(90px);
+            height: rem(37px);
+        }
+
+        .copyright {
+            opacity: 0.5;
+        }
+    }
+
+    .contact-list {
+        float: left;
+        padding: rem(5px) 0;
+
+        &__item {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: rem(68px);
+
+            a {
+                display: flex;
+                align-items: center;
+                @include font-size(20px);
+                color: #000000;
+                text-decoration: none;
+                line-height: rem(32px);
+
+                [class^="i-"] {
+                    width: rem(32px);
+                    height: rem(32px);
+                    margin-right: rem(18px);
+                }
+
+                .i-msg {
+                    background: url("/images/msg.svg") no-repeat center/contain;
+                }
+
+                .i-phone {
+                    background: url("/images/phone.svg") no-repeat center/contain;
+                }
+            }
+        }
+    }
+
+    .social-list {
+        float: right;
+        margin-top: rem(-5px);
+
+        &__item {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: rem(20px);
+
+            a {
+                [class^="i-"] {
+                    width: rem(48px);
+                    height: rem(48px);
+                    display: block;
+                }
+
+                .i-fb {
+                    background: url("/images/fb.svg") no-repeat center/contain;
+                }
+
+                .i-in {
+                    background: url("/images/insta.svg") no-repeat center/contain;
+                }
+
+                .i-vk {
+                    background: url("/images/vk.svg") no-repeat center/contain;
+                }
+
+                .i-yt {
+                    background: url("/images/yt.svg") no-repeat center/contain;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .site-footer {
+        padding: 2.5rem 0 2.8rem;
+
+        .site-brand {
+            float: left;
+            margin-right: 0;
+            padding: 10px 0;
+            width: 40%;
+
+            &__logo {
+                width: 6.5rem;
+                height: 2.85rem;
+            }
+
+            .copyright {
+                display: none;
+            }
+        }
+
+        .contact-list {
+            float: right;
+            width: auto;
+            padding: 0;
+
+            &__item {
+                margin-right: 0;
+                margin-bottom: 10px;
+                display: block;
+
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .social-list {
+            clear: both;
+            float: none;
+            padding-top: 20px;
+            text-align: center;
+
+            &__item {
+                a {
+                    [class^="i-"] {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

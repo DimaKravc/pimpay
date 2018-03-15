@@ -1,0 +1,26 @@
+// Main colors
+$color-base: #000000;
+$color-accent: #ffcc00;
+
+// Font configs
+$font-size-base: 20px;
+$font-line-height-base: 1.25;
+
+// Font families
+$font-family-base: "Source Sans Pro", sans-serif;
+
+// Font weights
+$font-weight-normal: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// Base transition time
+$transition-time: .13s 0s ease-in;
+
+// Screens resolutions
+$screen-sm-min: 768px;
+$screen-sm-max: 767px;
+$screen-md-min: 992px;
+$screen-md-max: 991px;
+$screen-lg-min: 1215px;
+$screen-lg-max: 1214px;

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PimPay — помощь интернет-магазинам</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="PimPay">
+    <meta name="application-name" content="PimPay">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container">
+        <div class="site-header__inner">
+            <h1 class="site-brand"><a href="/"><span class="site-brand__logo"></span></a></h1>
+            <button class="button button_size_small auth-button" data-toggle="modal" data-auth-action="#authorization">Авторизация</button>
+        </div>
+    </div>
+</header>
+<section class="section-entry">
+    <div class="container">
+        <div class="section-entry__content">
+            <h2 class="section-entry__lead">Новые горизонты для бизнеса</h2>
+            <span class="section-entry__icon-arrow"></span>
+            <p class="section-entry__text">Участвуйте в партнерской программе PimPay и увеличивайте прибыль</p>
+        </div>
+        <div class="section-entry__footer">
+            <button class="button button_size_big" data-auth-action="#registration">Стать партнером</button>
+        </div>
+    </div>
+</section>
+<section class="section-advantages">
+    <div class="container">
+        <ul class="advantages-list">
+            <li class="advantages-list__item advantage">
+                <div class="advantage__icon-wrap"><span class="i-start"></span></div>
+                <div class="advantage__content">
+                    <h3 class="advantage__title">Быстрый старт</h3>
+                    <p class="advantage__text">Зарегистрируйтесь в партнерской программе, заключите соглашение — и вы наш партнер!</p>
+                </div>
+            </li>
+            <li class="advantages-list__item advantage">
+                <div class="advantage__icon-wrap"><span class="i-promo"></span></div>
+                <div class="advantage__content">
+                    <h3 class="advantage__title">Индивидуальные решения</h3>
+                    <p class="advantage__text">Вы сами назначаете ставки для клиентов. Создавайте промокоды и управляйте ими в личном кабинете</p>
+                </div>
+            </li>
+            <li class="advantages-list__item advantage">
+                <div class="advantage__icon-wrap"><span class="i-stats"></span></div>
+                <div class="advantage__content">
+                    <h3 class="advantage__title">Наглядная статистика</h3>
+                    <p class="advantage__text">Обороты партнеров, графики продаж, история промокодов — в одном окне</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="section-calculator">
+    <div class="container">
+        <div class="section-calculator__header">
+            <h3 class="section-calculator__title">Прогрессивные ставки, понятные расчеты</h3>
+            <p class="section-calculator__text">Рассчитайте ориентировочную прибыль от клиентов с помощью калькулятора</p>
+        </div>
+        <div class="calculator">
+            <div class="calculator__header">
+                <div class="calculator__row">
+                    <p class="calculator__text">Я готов привести</p>
+                    <div class="calculator__num" data-calc="customers" data-min="5">10</div>
+                    <div class="calculator-controls">
+                        <button class="calculator-controls__increment" data-action="inc" data-target="customers" data-step="5"></button>
+                        <button class="calculator-controls__decrement" data-action="dec" data-target="customers" data-step="5"></button>
+                    </div>
+                    <p class="calculator__text">клиентов</p>
+                </div>
+                <div class="calculator__row">
+                    <p class="calculator__text">с оборотом</p>
+                    <div class="calculator__num" data-calc="sum">15000</div>
+                    <div class="calculator-controls">
+                        <button class="calculator-controls__increment" data-action="inc" data-target="sum" data-step="5000"><span class="i-top"></span></button>
+                        <button class="calculator-controls__decrement" data-action="dec" data-target="sum" data-step="5000"><span class="i-bottom"></span></button>
+                    </div>
+                    <p class="calculator__text">рублей</p>
+                </div>
+            </div>
+            <div class="calculator__footer">
+                <h3 class="calculator__footer__title">Моя прибыль:</h3>
+                <div class="calculator__row">
+                    <div class="calculator__num" data-calc="total"></div>
+                    <p class="calculator__text">рублей в месяц</p>
+                </div>
+                <button class="button" data-auth-action="#registration">Начать зарабатывать</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-customers">
+    <div class="container">
+        <div class="section-customers__header">
+            <h3 class="section-customers__title">
+                Наша партнерская программа удобна для разных типов клиентов
+            </h3>
+        </div>
+        <ul class="customers-list">
+            <li class="customers-list__item">
+                <div class="customer">
+                    <div class="customer__icon-wrap">
+                        <span class="i-freelancer"></span>
+                    </div>
+                    <h4 class="customer__title">Web студии и фрилансеры</h4>
+                    <p class="customer__text">Привлекайте клиентов и увеличивайте доход, не выходя из дома</p>
+                </div>
+            </li>
+            <li class="customers-list__item">
+                <div class="customer">
+                    <div class="customer__icon-wrap">
+                        <span class="i-cms"></span>
+                    </div>
+                    <h4 class="customer__title">Создатели CMS</h4>
+                    <p class="customer__text">Легкая интеграция, удобный личный кабинет — все для того, чтобы вы начали зарабатывать быстрее</p>
+                </div>
+            </li>
+            <li class="customers-list__item">
+                <div class="customer">
+                    <div class="customer__icon-wrap">
+                        <span class="i-delivery"></span>
+                    </div>
+                    <h4 class="customer__title">Курьерские службы</h4>
+                    <p class="customer__text">Больше привлеченных клиентов — выше прибыль</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="section-promo">
+    <div class="container">
+        <div class="section-promo__inner">
+            <div class="section-promo__col">
+                <p class="section-promo__text">Присоединяйтесь к партнерской программе и покоряйте новые высоты с PimPay</p>
+            </div>
+            <div class="section-promo__col">
+                <button class="button" data-auth-action="#registration">зарегистрироваться</button>
+            </div>
+        </div>
+        <a class="scroll-to-top" href="#" data-action="scrollToTop"></a>
+    </div>
+</section>
+<footer class="site-footer">
+    <div class="container">
+        <div class="site-brand"><a href="/"><span class="site-brand__logo"></span></a>
+            <small class="copyright">© PimPay, 2012 – 2018</small>
+        </div>
+        <ul class="contact-list">
+            <li class="contact-list__item">
+                <a href="mailto:partner@pimpay.ru"><span class="i-msg"></span> partner@pimpay.ru</a>
+            </li>
+            <li class="contact-list__item">
+                <a href="tel:74991301649"><span class="i-phone"></span> +7 (499) 130-16-49</a>
+            </li>
+        </ul>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="#"><span class="i-fb"></span></a>
+            </li>
+            <li class="social-list__item">
+                <a href="#"><span class="i-in"></span></a>
+            </li>
+            <li class="social-list__item">
+                <a href="#"><span class="i-vk"></span></a>
+            </li>
+            <li class="social-list__item">
+                <a href="#"><span class="i-yt"></span></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<div class="modal fade" data-role="auth-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-auth" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div id="authorization" class="hidden">
+    <h3 class="modal-auth__title">Вход в кабинет</h3>
+    <form class="form">
+        <div class="form__content">
+            <div class="form__group">
+                <label class="form__label" for="auth_email">Email</label>
+                <input class="form__field" id="auth_email" name="auth_email" type="email" placeholder="username@mail.com" required>
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="auth_password">Пароль</label>
+                <input class="form__field" id="auth_password" name="auth_password" type="password" placeholder="••••••••" minlength="8" required>
+            </div>
+        </div>
+        <div class="form__footer">
+            <button class="button button_size_small" type="submit">Войти</button>
+        </div>
+    </form>
+</div>
+<div id="authorization-fail" class="hidden">
+    <div class="info-block">
+        <div class="info-block__content">
+            <div class="info-block__status-icon"><span class="i-fail"></span></div>
+            <h5 class="info-block__title">Неправильно<br>набран пароль</h5>
+        </div>
+        <div class="info-block__footer">
+            <button class="button button_size_small">ВОССТАНОВИТЬ ПАРОЛЬ</button>
+        </div>
+    </div>
+</div>
+<div id="registration" class="hidden">
+    <h3 class="modal-auth__title">Регистрация партнера
+        <small class="modal-auth__subtitle">Финансируем закупку рекламы, товара, оплату услуг службы доставки. <br>Средства отправляются вашему контрагенту.</small>
+    </h3>
+    <form class="form">
+        <div class="form__content">
+            <div class="form__group">
+                <label class="form__label" for="reg_email">Email</label>
+                <input class="form__field" id="reg_email" name="reg_email" type="email" placeholder="username@mail.com" required>
+            </div>
+        </div>
+        <div class="form__footer">
+            <button class="button button_size_small" type="submit">Зарегистрироваться</button>
+        </div>
+    </form>
+</div>
+<div id="registration-success" class="hidden">
+    <div class="info-block">
+        <div class="info-block__content">
+            <div class="info-block__status-icon"><span class="i-success"></span></div>
+            <h5 class="info-block__title">Поздравляем,<br> вы зарегистрировались<br> в системе PimPay!
+                <small class="info-block__subtitle">Сейчас вы будете перенаправлены в Личный кабинет.<br> Пароль для последующего входа в Систему<br> мы отправили на на ваш электронный
+                    адрес.
+                </small>
+            </h5>
+        </div>
+    </div>
+</div>
+<div id="registration-fail" class="hidden">
+    <div class="info-block">
+        <div class="info-block__content">
+            <div class="info-block__status-icon"><span class="i-fail"></span></div>
+            <h5 class="info-block__title">Пользователь с таким логином<br>уже существует</h5>
+        </div>
+        <div class="info-block__footer">
+            <button class="button button_size_small" type="submit">Авторизоваться</button>
+        </div>
+    </div>
+</div>
+<div id="password-reset" class="hidden">
+    <h3 class="modal-auth__title">Восстановление пароля</h3>
+    <form class="form">
+        <div class="form__content">
+            <div class="form__group">
+                <label class="form__label" for="new_pass">Новый пароль</label>
+                <input class="form__field" id="new_pass" name="new_pass" type="password" placeholder="•••••••••" minlength="8" required>
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="new_pass_again">Новый пароль еще раз</label>
+                <input class="form__field" id="new_pass_again" name="new_pass_again" type="password" placeholder="••••••••" minlength="8" required>
+            </div>
+        </div>
+        <div class="form__footer">
+            <button class="button button_size_small" type="submit">ИЗМЕНИТЬ ПАРОЛЬ</button>
+        </div>
+    </form>
+</div>
+<div id="password-reset-success" class="hidden">
+    <div class="info-block">
+        <div class="info-block__content">
+            <div class="info-block__status-icon"><span class="i-success"></span></div>
+            <h5 class="info-block__title">Пароль<br> успешно изменен</h5>
+        </div>
+        <div class="info-block__footer">
+            <button class="button button_size_small">ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ</button>
+        </div>
+    </div>
+</div>
+<script src="/scripts/jquery-3.3.1.min.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
+<script src="/scripts/main.js"></script>
+<script src="/scripts/application.js"></script>
+</body>
+</html>

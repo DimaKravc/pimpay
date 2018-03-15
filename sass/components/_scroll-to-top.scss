@@ -1,0 +1,11 @@
+.scroll-to-top {
+    width: rem(64px);
+    height: rem(64px);
+    background: url("/images/up.svg") no-repeat center/contain;
+}
+
+@media (max-width: $screen-sm-max) {
+ .scroll-to-top {
+     display: none;
+ }
+}

@@ -1,0 +1,59 @@
+.section-entry {
+    margin-bottom: rem(128px);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: rem(80px);
+    }
+    &__lead {
+        margin-bottom: 0;
+        @include font-size(54px);
+        font-weight: bold;
+        text-align: right;
+        letter-spacing: -0.3px;
+        width: rem(440px);
+    }
+    &__icon-arrow {
+        width: rem(70px);
+        height: rem(215px);
+        display: block;
+        margin: 0 rem(45px) 0 rem(30px);
+        background: url("/images/arrow-right.svg") no-repeat center/contain;
+    }
+    &__text {
+        margin-bottom: 0;
+        @include font-size(32px);
+        letter-spacing: -0.1px;
+        width: rem(440px);
+    }
+    &__footer {
+        text-align: center;
+
+        .button {
+            letter-spacing: 0.4px;
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .section-entry {
+        margin-bottom: rem(100px);
+
+        &__content {
+            flex-direction: column;
+        }
+        &__lead {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        &__icon-arrow {
+            display: none;
+        }
+        &__text {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}

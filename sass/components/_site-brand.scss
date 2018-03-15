@@ -1,0 +1,10 @@
+.site-brand {
+    margin: 0;
+
+    &__logo {
+        display: block;
+        width: rem(144px);
+        height: rem(56px);
+        background: url("/images/pimpay.svg") no-repeat center/contain;
+    }
+}
